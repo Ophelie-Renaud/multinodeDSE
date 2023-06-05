@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;sub0_noOut.diagram, sub0_noOut.pi, sub1_noOut.diagram, sub1_noOut.pi, sub2_noOut.diagram, sub2_noOut.pi&apos; to &apos;generated&apos;" description="Move 6 resources to &apos;generated&apos;" destination="Algo/subs_init/generated" element1="Algo/subs_init/sub0_noOut.diagram" element2="Algo/subs_init/sub0_noOut.pi" element3="Algo/subs_init/sub1_noOut.diagram" element4="Algo/subs_init/sub1_noOut.pi" element5="Algo/subs_init/sub2_noOut.diagram" element6="Algo/subs_init/sub2_noOut.pi" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="6" stamp="1685945866474" updateReferences="true"/>
+</session>

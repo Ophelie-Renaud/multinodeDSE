@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="parameters" for="graph" id="parameters"/>
+    <key attr.name="variables" for="graph" id="variables"/>
+    <key attr.name="arguments" for="node" id="arguments"/>
+    <key attr.name="name" attr.type="string" for="graph"/>
+    <key attr.name="graph_desc" attr.type="string" for="node"/>
+    <key attr.name="delay" attr.type="string" for="edge"/>
+    <graph edgedefault="directed">
+        <data key="name">sub2_noOut</data>
+        <node id="srcA" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="src">
+                <param direction="OUT" isConfig="false"
+                    name="out" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="43" kind="output" name="out"/>
+        </node>
+        <node id="frk" kind="fork">
+            <port annotation="NONE" expr="43" kind="input" name="in"/>
+            <port annotation="NONE" expr="2" kind="output" name="newPort"/>
+            <port annotation="NONE" expr="2" kind="output" name="newPort1"/>
+            <port annotation="NONE" expr="2" kind="output" name="newPort2"/>
+            <port annotation="NONE" expr="2" kind="output" name="newPort3"/>
+            <port annotation="NONE" expr="2" kind="output" name="newPort4"/>
+            <port annotation="NONE" expr="2" kind="output" name="newPort5"/>
+            <port annotation="NONE" expr="2" kind="output" name="newPort6"/>
+            <port annotation="NONE" expr="2" kind="output" name="newPort7"/>
+            <port annotation="NONE" expr="2" kind="output" name="newPort8"/>
+            <port annotation="NONE" expr="2" kind="output" name="newPort9"/>
+        </node>
+        <node id="OB_0" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="B">
+                <param direction="IN" isConfig="false" name="inB" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="feed" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="back" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="2" kind="input" name="inB"/>
+            <port annotation="NONE" expr="1" kind="input" name="feed"/>
+            <port annotation="NONE" expr="20" kind="output" name="back"/>
+            <port annotation="NONE" expr="2" kind="output" name="outB"/>
+        </node>
+        <node id="OB_1" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="B">
+                <param direction="IN" isConfig="false" name="inB" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="feed" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="back" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="2" kind="input" name="inB"/>
+            <port annotation="NONE" expr="20" kind="input" name="feed"/>
+            <port annotation="NONE" expr="1" kind="output" name="back"/>
+            <port annotation="NONE" expr="2" kind="output" name="outB"/>
+        </node>
+        <node id="OB_2" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="B">
+                <param direction="IN" isConfig="false" name="inB" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="feed" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="back" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="2" kind="input" name="inB"/>
+            <port annotation="NONE" expr="1" kind="input" name="feed"/>
+            <port annotation="NONE" expr="1" kind="output" name="back"/>
+            <port annotation="NONE" expr="2" kind="output" name="outB"/>
+        </node>
+        <node id="OB_3" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="B">
+                <param direction="IN" isConfig="false" name="inB" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="feed" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="back" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="2" kind="input" name="inB"/>
+            <port annotation="NONE" expr="1" kind="input" name="feed"/>
+            <port annotation="NONE" expr="1" kind="output" name="back"/>
+            <port annotation="NONE" expr="2" kind="output" name="outB"/>
+        </node>
+        <node id="OB_4" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="B">
+                <param direction="IN" isConfig="false" name="inB" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="feed" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="back" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="2" kind="input" name="inB"/>
+            <port annotation="NONE" expr="1" kind="input" name="feed"/>
+            <port annotation="NONE" expr="1" kind="output" name="back"/>
+            <port annotation="NONE" expr="2" kind="output" name="outB"/>
+        </node>
+        <node id="OB_5" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="B">
+                <param direction="IN" isConfig="false" name="inB" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="feed" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="back" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="2" kind="input" name="inB"/>
+            <port annotation="NONE" expr="1" kind="input" name="feed"/>
+            <port annotation="NONE" expr="1" kind="output" name="back"/>
+            <port annotation="NONE" expr="2" kind="output" name="outB"/>
+        </node>
+        <node id="OB_6" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="B">
+                <param direction="IN" isConfig="false" name="inB" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="feed" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="back" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="2" kind="input" name="inB"/>
+            <port annotation="NONE" expr="1" kind="input" name="feed"/>
+            <port annotation="NONE" expr="1" kind="output" name="back"/>
+            <port annotation="NONE" expr="2" kind="output" name="outB"/>
+        </node>
+        <node id="OB_7" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="B">
+                <param direction="IN" isConfig="false" name="inB" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="feed" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="back" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="2" kind="input" name="inB"/>
+            <port annotation="NONE" expr="1" kind="input" name="feed"/>
+            <port annotation="NONE" expr="1" kind="output" name="back"/>
+            <port annotation="NONE" expr="2" kind="output" name="outB"/>
+        </node>
+        <node id="OB_8" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="B">
+                <param direction="IN" isConfig="false" name="inB" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="feed" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="back" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="2" kind="input" name="inB"/>
+            <port annotation="NONE" expr="1" kind="input" name="feed"/>
+            <port annotation="NONE" expr="1" kind="output" name="back"/>
+            <port annotation="NONE" expr="2" kind="output" name="outB"/>
+        </node>
+        <node id="OB_9" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="B">
+                <param direction="IN" isConfig="false" name="inB" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="feed" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="back" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="2" kind="input" name="inB"/>
+            <port annotation="NONE" expr="1" kind="input" name="feed"/>
+            <port annotation="NONE" expr="1" kind="output" name="back"/>
+            <port annotation="NONE" expr="2" kind="output" name="outB"/>
+        </node>
+        <node id="srcD" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="src">
+                <param direction="OUT" isConfig="false"
+                    name="out" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="1" kind="output" name="out"/>
+        </node>
+        <node id="jn" kind="join">
+            <port annotation="NONE" expr="2" kind="input" name="newPort0"/>
+            <port annotation="NONE" expr="2" kind="input" name="newPort1"/>
+            <port annotation="NONE" expr="2" kind="input" name="newPort2"/>
+            <port annotation="NONE" expr="2" kind="input" name="newPort3"/>
+            <port annotation="NONE" expr="2" kind="input" name="newPort4"/>
+            <port annotation="NONE" expr="2" kind="input" name="newPort5"/>
+            <port annotation="NONE" expr="2" kind="input" name="newPort6"/>
+            <port annotation="NONE" expr="2" kind="input" name="newPort7"/>
+            <port annotation="NONE" expr="2" kind="input" name="newPort8"/>
+            <port annotation="NONE" expr="2" kind="input" name="newPort9"/>
+            <port annotation="NONE" expr="17" kind="input" name="newPortb0"/>
+            <port annotation="NONE" expr="23" kind="input" name="newPortb1"/>
+            <port annotation="NONE" expr="60" kind="output" name="out"/>
+        </node>
+        <node id="get" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="get">
+                <param direction="IN" isConfig="false" name="in" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="1" kind="input" name="in"/>
+        </node>
+        <node id="OC" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="OC">
+                <param direction="IN" isConfig="false" name="inC" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="6" kind="input" name="inC"/>
+        </node>
+        <node id="src_B0" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="src">
+                <param direction="OUT" isConfig="false"
+                    name="out" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="17" kind="output" name="out"/>
+        </node>
+        <node id="src_B1" kind="actor">
+            <data key="graph_desc">org.preesm.simsdp/dummy.abc/Code/include/code.h</data>
+            <loop name="src">
+                <param direction="OUT" isConfig="false"
+                    name="out" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="23" kind="output" name="out"/>
+        </node>
+        <node expr="1" getter="" id="OB_0_back__OB_1_feed"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="1" kind="input" name="set"/>
+            <port annotation="NONE" expr="1" kind="output" name="get"/>
+        </node>
+        <node expr="1" getter="" id="OB_1_back__OB_2_feed"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="1" kind="input" name="set"/>
+            <port annotation="NONE" expr="1" kind="output" name="get"/>
+        </node>
+        <node expr="1" getter="" id="OB_2_back__OB_3_feed"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="1" kind="input" name="set"/>
+            <port annotation="NONE" expr="1" kind="output" name="get"/>
+        </node>
+        <node expr="1" getter="" id="OB_3_back__OB_4_feed"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="1" kind="input" name="set"/>
+            <port annotation="NONE" expr="1" kind="output" name="get"/>
+        </node>
+        <node expr="1" getter="" id="OB_4_back__OB_5_feed"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="1" kind="input" name="set"/>
+            <port annotation="NONE" expr="1" kind="output" name="get"/>
+        </node>
+        <node expr="1" getter="" id="OB_5_back__OB_6_feed"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="1" kind="input" name="set"/>
+            <port annotation="NONE" expr="1" kind="output" name="get"/>
+        </node>
+        <node expr="1" getter="" id="OB_6_back__OB_7_feed"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="1" kind="input" name="set"/>
+            <port annotation="NONE" expr="1" kind="output" name="get"/>
+        </node>
+        <node expr="1" getter="" id="OB_7_back__OB_8_feed"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="1" kind="input" name="set"/>
+            <port annotation="NONE" expr="1" kind="output" name="get"/>
+        </node>
+        <node expr="1" getter="" id="OB_8_back__OB_9_feed"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="1" kind="input" name="set"/>
+            <port annotation="NONE" expr="1" kind="output" name="get"/>
+        </node>
+        <edge expr="1" kind="fifo" source="OB_0"
+            sourceport="back" target="OB_1" targetport="feed" type="uchar">
+            <data key="delay">OB_0_back__OB_1_feed</data>
+        </edge>
+        <edge expr="1" kind="fifo" source="OB_1"
+            sourceport="back" target="OB_2" targetport="feed" type="uchar">
+            <data key="delay">OB_1_back__OB_2_feed</data>
+        </edge>
+        <edge expr="1" kind="fifo" source="OB_2"
+            sourceport="back" target="OB_3" targetport="feed" type="uchar">
+            <data key="delay">OB_2_back__OB_3_feed</data>
+        </edge>
+        <edge expr="1" kind="fifo" source="OB_3"
+            sourceport="back" target="OB_4" targetport="feed" type="uchar">
+            <data key="delay">OB_3_back__OB_4_feed</data>
+        </edge>
+        <edge expr="1" kind="fifo" source="OB_4"
+            sourceport="back" target="OB_5" targetport="feed" type="uchar">
+            <data key="delay">OB_4_back__OB_5_feed</data>
+        </edge>
+        <edge expr="1" kind="fifo" source="OB_5"
+            sourceport="back" target="OB_6" targetport="feed" type="uchar">
+            <data key="delay">OB_5_back__OB_6_feed</data>
+        </edge>
+        <edge expr="1" kind="fifo" source="OB_6"
+            sourceport="back" target="OB_7" targetport="feed" type="uchar">
+            <data key="delay">OB_6_back__OB_7_feed</data>
+        </edge>
+        <edge expr="1" kind="fifo" source="OB_7"
+            sourceport="back" target="OB_8" targetport="feed" type="uchar">
+            <data key="delay">OB_7_back__OB_8_feed</data>
+        </edge>
+        <edge expr="1" kind="fifo" source="OB_8"
+            sourceport="back" target="OB_9" targetport="feed" type="uchar">
+            <data key="delay">OB_8_back__OB_9_feed</data>
+        </edge>
+        <edge kind="fifo" source="srcA" sourceport="out"
+            target="frk" targetport="in" type="uchar"/>
+        <edge kind="fifo" source="srcD" sourceport="out"
+            target="OB_0" targetport="feed" type="uchar"/>
+        <edge kind="fifo" source="frk" sourceport="newPort"
+            target="OB_0" targetport="inB" type="uchar"/>
+        <edge kind="fifo" source="frk" sourceport="newPort1"
+            target="OB_1" targetport="inB" type="uchar"/>
+        <edge kind="fifo" source="frk" sourceport="newPort2"
+            target="OB_2" targetport="inB" type="uchar"/>
+        <edge kind="fifo" source="frk" sourceport="newPort3"
+            target="OB_3" targetport="inB" type="uchar"/>
+        <edge kind="fifo" source="frk" sourceport="newPort4"
+            target="OB_4" targetport="inB" type="uchar"/>
+        <edge kind="fifo" source="frk" sourceport="newPort5"
+            target="OB_5" targetport="inB" type="uchar"/>
+        <edge kind="fifo" source="frk" sourceport="newPort6"
+            target="OB_6" targetport="inB" type="uchar"/>
+        <edge kind="fifo" source="frk" sourceport="newPort7"
+            target="OB_7" targetport="inB" type="uchar"/>
+        <edge kind="fifo" source="frk" sourceport="newPort8"
+            target="OB_8" targetport="inB" type="uchar"/>
+        <edge kind="fifo" source="frk" sourceport="newPort9"
+            target="OB_9" targetport="inB" type="uchar"/>
+        <edge kind="fifo" source="OB_9" sourceport="back"
+            target="get" targetport="in" type="uchar"/>
+        <edge kind="fifo" source="OB_0" sourceport="outB"
+            target="jn" targetport="newPort0" type="uchar"/>
+        <edge kind="fifo" source="OB_1" sourceport="outB"
+            target="jn" targetport="newPort1" type="uchar"/>
+        <edge kind="fifo" source="OB_2" sourceport="outB"
+            target="jn" targetport="newPort2" type="uchar"/>
+        <edge kind="fifo" source="OB_3" sourceport="outB"
+            target="jn" targetport="newPort3" type="uchar"/>
+        <edge kind="fifo" source="OB_4" sourceport="outB"
+            target="jn" targetport="newPort4" type="uchar"/>
+        <edge kind="fifo" source="OB_5" sourceport="outB"
+            target="jn" targetport="newPort5" type="uchar"/>
+        <edge kind="fifo" source="OB_7" sourceport="outB"
+            target="jn" targetport="newPort7" type="uchar"/>
+        <edge kind="fifo" source="OB_6" sourceport="outB"
+            target="jn" targetport="newPort6" type="uchar"/>
+        <edge kind="fifo" source="OB_8" sourceport="outB"
+            target="jn" targetport="newPort8" type="uchar"/>
+        <edge kind="fifo" source="OB_9" sourceport="outB"
+            target="jn" targetport="newPort9" type="uchar"/>
+        <edge kind="fifo" source="jn" sourceport="out"
+            target="OC" targetport="inC" type="uchar"/>
+        <edge kind="fifo" source="src_B0" sourceport="out"
+            target="jn" targetport="newPortb0" type="uchar"/>
+        <edge kind="fifo" source="src_B1" sourceport="out"
+            target="jn" targetport="newPortb1" type="uchar"/>
+    </graph>
+</graphml>

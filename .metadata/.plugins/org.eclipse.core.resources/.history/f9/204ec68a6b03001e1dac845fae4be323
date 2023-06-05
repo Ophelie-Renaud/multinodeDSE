@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="parameters" for="graph" id="parameters"/>
+    <key attr.name="variables" for="graph" id="variables"/>
+    <key attr.name="arguments" for="node" id="arguments"/>
+    <key attr.name="name" attr.type="string" for="graph"/>
+    <key attr.name="graph_desc" attr.type="string" for="node"/>
+    <key attr.name="delay" attr.type="string" for="edge"/>
+    <graph edgedefault="directed">
+        <data key="name">sub0_init</data>
+        <node id="A" kind="actor">
+            <data key="graph_desc">Code/include/code.h</data>
+            <loop name="A">
+                <param direction="OUT" isConfig="false"
+                    name="outA" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="20" kind="output" name="outA"/>
+        </node>
+        <node id="B_0" kind="actor">
+            <data key="graph_desc">Code/include/code.h</data>
+            <loop name="B">
+                <param direction="IN" isConfig="false" name="inB" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="feed" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="back" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="1" kind="input" name="inB"/>
+            <port annotation="NONE" expr="1" kind="input" name="feed"/>
+            <port annotation="NONE" expr="1" kind="output" name="back"/>
+            <port annotation="NONE" expr="1" kind="output" name="outB"/>
+        </node>
+        <node id="frk" kind="fork">
+            <port annotation="NONE" expr="0" kind="input" name="in"/>
+            <port annotation="NONE" expr="0" kind="output" name="out0"/>
+            <port annotation="NONE" expr="0" kind="output" name="out1"/>
+        </node>
+        <node id="snk_1" kind="actor">
+            <data key="graph_desc">Code/include/code.h</data>
+            <loop name="get">
+                <param direction="IN" isConfig="false" name="in" type="uchar "/>
+            </loop>
+            <port annotation="NONE" expr="43" kind="input" name="in"/>
+        </node>
+        <node id="snk_0" kind="actor">
+            <data key="graph_desc">Code/include/code.h</data>
+            <loop name="get">
+                <param direction="IN" isConfig="false" name="in" type="uchar "/>
+            </loop>
+            <port annotation="NONE" expr="43" kind="input" name="in"/>
+        </node>
+        <node id="snk_2" kind="actor">
+            <data key="graph_desc">Code/include/code.h</data>
+            <loop name="get">
+                <param direction="IN" isConfig="false" name="in" type="uchar "/>
+            </loop>
+            <port annotation="NONE" expr="43" kind="input" name="in"/>
+        </node>
+        <node id="set" kind="actor">
+            <data key="graph_desc">Code/include/code.h</data>
+            <loop name="set">
+                <param direction="OUT" isConfig="false"
+                    name="out" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="1" kind="output" name="out"/>
+        </node>
+        <node expr="0" getter="snk_1" id="B_0_back__B_0_feed"
+            kind="delay" level="none" setter="set">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <edge expr="0" kind="fifo" source="B_0" sourceport="back"
+            target="B_0" targetport="feed" type="void">
+            <data key="delay">B_0_back__B_0_feed</data>
+        </edge>
+        <edge kind="fifo" source="A" sourceport="outA"
+            target="frk" targetport="in" type="void"/>
+        <edge kind="fifo" source="frk" sourceport="out0"
+            target="B_0" targetport="inB" type="void"/>
+        <edge kind="fifo" source="B_0" sourceport="outB"
+            target="snk_0" targetport="in" type="void"/>
+        <edge kind="fifo" source="set" sourceport="out"
+            target="B_0_back__B_0_feed" targetport="set" type="void"/>
+        <edge kind="fifo" source="B_0_back__B_0_feed"
+            sourceport="get" target="snk_1" targetport="in" type="void"/>
+        <edge kind="fifo" source="frk" sourceport="out1"
+            target="snk_2" targetport="in" type="void"/>
+    </graph>
+</graphml>
