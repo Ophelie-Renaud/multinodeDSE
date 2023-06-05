@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key attr.name="parameters" for="graph" id="parameters"/>
+    <key attr.name="variables" for="graph" id="variables"/>
+    <key attr.name="arguments" for="node" id="arguments"/>
+    <key attr.name="name" attr.type="string" for="graph"/>
+    <key attr.name="graph_desc" attr.type="string" for="node"/>
+    <key attr.name="delay" attr.type="string" for="edge"/>
+    <graph edgedefault="directed">
+        <data key="name">abc_top</data>
+        <node id="sub0" kind="actor">
+            <data key="graph_desc">Code/include/code.h</data>
+            <loop name="sub0">
+                <param direction="OUT" isConfig="false"
+                    name="outA" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outD" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="43" kind="output" name="outA"/>
+            <port annotation="NONE" expr="1" kind="output" name="outD"/>
+            <port annotation="NONE" expr="17" kind="output" name="outB"/>
+        </node>
+        <node id="sub1" kind="actor">
+            <data key="graph_desc">Code/include/code.h</data>
+            <loop name="sub1">
+                <param direction="IN" isConfig="false" name="inA" type="uchar"/>
+                <param direction="IN" isConfig="false" name="inD" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outA" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outD" type="uchar"/>
+                <param direction="OUT" isConfig="false"
+                    name="outB" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="43" kind="input" name="inA"/>
+            <port annotation="NONE" expr="1" kind="input" name="inD"/>
+            <port annotation="NONE" expr="20" kind="output" name="outA"/>
+            <port annotation="NONE" expr="23" kind="output" name="outB"/>
+            <port annotation="NONE" expr="1" kind="output" name="outD"/>
+        </node>
+        <node id="sub2" kind="actor">
+            <data key="graph_desc">Code/include/code.h</data>
+            <loop name="sub2">
+                <param direction="IN" isConfig="false" name="inA" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="inB1" type="uchar"/>
+                <param direction="IN" isConfig="false"
+                    name="inB0" type="uchar"/>
+                <param direction="IN" isConfig="false" name="inD" type="uchar"/>
+            </loop>
+            <port annotation="NONE" expr="20" kind="input" name="inA"/>
+            <port annotation="NONE" expr="23" kind="input" name="inB1"/>
+            <port annotation="NONE" expr="17" kind="input" name="inB0"/>
+            <port annotation="NONE" expr="1" kind="input" name="inD"/>
+        </node>
+        <node expr="43" getter="" id="sub0_outA__sub1_inA"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="43" kind="input" name="set"/>
+            <port annotation="NONE" expr="43" kind="output" name="get"/>
+        </node>
+        <node expr="1" getter="" id="sub0_outD__sub1_inD"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="1" kind="input" name="set"/>
+            <port annotation="NONE" expr="1" kind="output" name="get"/>
+        </node>
+        <node expr="0" getter="" id="sub0_outB__sub2_inB0"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="0" kind="input" name="set"/>
+            <port annotation="NONE" expr="0" kind="output" name="get"/>
+        </node>
+        <node expr="20" getter="" id="sub1_outA__sub2_inA"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="20" kind="input" name="set"/>
+            <port annotation="NONE" expr="20" kind="output" name="get"/>
+        </node>
+        <node expr="23" getter="" id="sub1_outB__sub2_inB1"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="23" kind="input" name="set"/>
+            <port annotation="NONE" expr="23" kind="output" name="get"/>
+        </node>
+        <node expr="1" getter="" id="sub1_outD__sub2_inD"
+            kind="delay" level="permanent" setter="">
+            <port annotation="NONE" expr="1" kind="input" name="set"/>
+            <port annotation="NONE" expr="1" kind="output" name="get"/>
+        </node>
+        <edge expr="43" kind="fifo" source="sub0"
+            sourceport="outA" target="sub1" targetport="inA" type="uchar">
+            <data key="delay">sub0_outA__sub1_inA</data>
+        </edge>
+        <edge expr="1" kind="fifo" source="sub0"
+            sourceport="outD" target="sub1" targetport="inD" type="uchar">
+            <data key="delay">sub0_outD__sub1_inD</data>
+        </edge>
+        <edge expr="20" kind="fifo" source="sub1"
+            sourceport="outA" target="sub2" targetport="inA" type="uchar">
+            <data key="delay">sub1_outA__sub2_inA</data>
+        </edge>
+        <edge expr="23" kind="fifo" source="sub1"
+            sourceport="outB" target="sub2" targetport="inB1" type="uchar">
+            <data key="delay">sub1_outB__sub2_inB1</data>
+        </edge>
+        <edge expr="0" kind="fifo" source="sub0"
+            sourceport="outB" target="sub2" targetport="inB0" type="uchar">
+            <data key="delay">sub0_outB__sub2_inB0</data>
+        </edge>
+        <edge expr="1" kind="fifo" source="sub1"
+            sourceport="outD" target="sub2" targetport="inD" type="uchar">
+            <data key="delay">sub1_outD__sub2_inD</data>
+        </edge>
+    </graph>
+</graphml>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.4">
+    <spirit:vendor>ietr</spirit:vendor>
+    <spirit:library>preesm</spirit:library>
+    <spirit:name>3CoresX86</spirit:name>
+    <spirit:version>1</spirit:version>
+    <spirit:componentInstances>
+        <spirit:componentInstance>
+            <spirit:instanceName>Node0</spirit:instanceName>
+            <spirit:hardwareId>0</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="x86" spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>Node1</spirit:instanceName>
+            <spirit:hardwareId>1</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="x86" spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>Node2</spirit:instanceName>
+            <spirit:hardwareId>2</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="x86" spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+        <spirit:componentInstance>
+            <spirit:instanceName>distributed_mem</spirit:instanceName>
+            <spirit:hardwareId>0</spirit:hardwareId>
+            <spirit:componentRef spirit:library=""
+                spirit:name="defaultcontentionComNode"
+                spirit:vendor="" spirit:version=""/>
+            <spirit:configurableElementValues/>
+        </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:interconnections>
+        <spirit:interconnection>
+            <spirit:name>Node0|bus|distributed_mem|bus</spirit:name>
+            <spirit:activeInterface spirit:busRef="bus" spirit:componentRef="Node0"/>
+            <spirit:activeInterface spirit:busRef="bus" spirit:componentRef="distributed_mem"/>
+        </spirit:interconnection>
+        <spirit:interconnection>
+            <spirit:name>Node1|bus|distributed_mem|bus</spirit:name>
+            <spirit:activeInterface spirit:busRef="bus" spirit:componentRef="Node1"/>
+            <spirit:activeInterface spirit:busRef="bus" spirit:componentRef="distributed_mem"/>
+        </spirit:interconnection>
+        <spirit:interconnection>
+            <spirit:name>Node2|bus|distributed_mem|bus</spirit:name>
+            <spirit:activeInterface spirit:busRef="bus" spirit:componentRef="Node2"/>
+            <spirit:activeInterface spirit:busRef="bus" spirit:componentRef="distributed_mem"/>
+        </spirit:interconnection>
+    </spirit:interconnections>
+    <spirit:hierConnections/>
+    <spirit:vendorExtensions>
+        <slam:componentDescriptions xmlns:slam="http://sourceforge.net/projects/dftools/slam">
+            <slam:componentDescription slam:componentRef="x86"
+                slam:componentType="Operator" slam:refinement=""/>
+            <slam:componentDescription
+                slam:componentRef="defaultcontentionComNode"
+                slam:componentType="contentionComNode"
+                slam:refinement="" slam:speed="1"/>
+        </slam:componentDescriptions>
+        <slam:linkDescriptions xmlns:slam="http://sourceforge.net/projects/dftools/slam">
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="Node0|bus|distributed_mem|bus"/>
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="Node1|bus|distributed_mem|bus"/>
+            <slam:linkDescription slam:directedLink="undirected"
+                slam:linkType="DataLink" slam:referenceId="Node2|bus|distributed_mem|bus"/>
+        </slam:linkDescriptions>
+        <slam:designDescription xmlns:slam="http://sourceforge.net/projects/dftools/slam">
+            <slam:parameters/>
+        </slam:designDescription>
+    </spirit:vendorExtensions>
+</spirit:design>

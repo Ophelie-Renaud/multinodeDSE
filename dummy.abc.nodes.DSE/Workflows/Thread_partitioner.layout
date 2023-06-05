@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+   <vertices>
+      <vertex id="scenario" x="57" y="352"/>
+      <vertex id="Graph Exporter" x="381" y="70"/>
+      <vertex id="SCAPE" x="219" y="260"/>
+      <vertex id="PiMM2SrDAG" x="381" y="232"/>
+      <vertex id="PiSDF Scheduling" x="565" y="232"/>
+      <vertex id="Display Gantt" x="759" y="81"/>
+      <vertex id="Gantt Exporter" x="759" y="384"/>
+      <vertex id="MEG Builder" x="759" y="243"/>
+      <vertex id="Memory Allocation" x="951" y="335"/>
+      <vertex id="Code Generation" x="1159" y="382"/>
+   </vertices>
+</layout>
